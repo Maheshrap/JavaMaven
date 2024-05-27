@@ -14,6 +14,7 @@ public class Node {
 		middle=new Node();
 		last=new Node();
 		System.out.println("=========//////");
+		System.out.println("Hello");
 		head.data=10;
 		middle.data=20;
 		last.data=30;
