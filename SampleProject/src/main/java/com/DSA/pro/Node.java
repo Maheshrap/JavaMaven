@@ -13,7 +13,7 @@ public class Node {
 		head=new Node();
 		middle=new Node();
 		last=new Node();
-		
+		System.out.println("=========");
 		head.data=10;
 		middle.data=20;
 		last.data=30;
