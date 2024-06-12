@@ -13,8 +13,8 @@ public class Node {
 		head=new Node();
 		middle=new Node();
 		last=new Node();
-		System.out.println("=========//////");
-		System.out.println("Hello");
+		
+		
 		head.data=10;
 		middle.data=20;
 		last.data=30;
@@ -26,7 +26,7 @@ public class Node {
 		Node temp=head;
 		while(temp !=null)
 		{
-			System.out.println(temp);
+			System.out.println(temp.data);
 			temp=temp.next;
 		}
 		
