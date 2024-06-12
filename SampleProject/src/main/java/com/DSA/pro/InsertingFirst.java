@@ -2,35 +2,33 @@ package com.DSA.pro;
 
 class Node1
 {
-	int data;
 	Node next;
+	int data;
 }
-public class InsertingFirst {
-	
+public class InsertingFirst
+{
 	Node head;
-	InsertingFirst next;
 	
-	public void addfirst(int val1)
-	{
-		int val=10;
+	public void addfirst(int val) {
 		
-		Node insert=new Node();
+		Node newnode=new Node();
+		newnode.data=val;
+		newnode.next=head;
 		
-		insert.data=val;
-		insert.next=head;
-		head=new Node();
+		head=newnode;
 		
 		Node temp=head;
-		while(temp!= null)
+		while(temp!=null)
 		{
 			System.out.println(temp.data);
 			temp=temp.next;
 		}
+		
 	}
 	public static void main(String[] args) {
-		InsertingFirst add=new InsertingFirst();
-		add.addfirst(20);
-		add.addfirst(30);
+		
+		InsertingFirst insert=new InsertingFirst();
+		insert.addfirst(20);
+		insert.addfirst(30);
 	}
-
 }
